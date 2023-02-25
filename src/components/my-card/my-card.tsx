@@ -3,28 +3,28 @@ import { Component, Host, h } from '@stencil/core';
 @Component({
   tag: 'my-card',
   styleUrl: 'my-card.css',
-  shadow: false,
+  shadow: true,
 })
 export class MyCard {
   private wrapper: HTMLElement;
 
-  private resizeObserver: ResizeObserver;
+  // private resizeObserver: ResizeObserver;
 
-  componentDidLoad() {
-    this.resizeObserver = new ResizeObserver(([entry]) => {
-      const { width } = entry.contentRect;
-      if (width < 400) {
-        this.wrapper.style.flexDirection = 'column';
-      } else {
-        this.wrapper.style.flexDirection = 'row';
-      }
-    });
-    this.resizeObserver.observe(this.wrapper);
-  }
+  // componentDidLoad() {
+  //   this.resizeObserver = new ResizeObserver(([entry]) => {
+  //     const { width } = entry.contentRect;
+  //     if (width < 400) {
+  //       this.wrapper.style.flexDirection = 'column';
+  //     } else {
+  //       this.wrapper.style.flexDirection = 'row';
+  //     }
+  //   });
+  //   this.resizeObserver.observe(this.wrapper);
+  // }
 
-  disconnectedCallback() {
-    this.resizeObserver.disconnect();
-  }
+  // disconnectedCallback() {
+  //   this.resizeObserver.disconnect();
+  // }
 
   render() {
     return (

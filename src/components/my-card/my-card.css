@@ -1,30 +1,34 @@
-my-card {
+:host {
   display: block;
-  /* container-type: inline-size;
-  container-name: card;   */
+  background-color: beige;
+  color: black;
+  container-type: inline-size;
+  container-name: card;  
 }
 
-my-card .wrapper {
+:host .wrapper {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 10px;
 }
 
-my-card span {
+:host span {
   flex-shrink: 0;
   display: block;
   width: 200px;
   height: 200px;
-  background-color: beige;
+  background-color: lightseagreen;
 }
 
 /* @media (min-width: 400px) {
-  my-card .wrapper {
+  :host .wrapper {
     flex-direction: row;
   }
 } */
 
-/* @container card (min-width: 400px) {
-  my-card .wrapper {
+@container card (min-width: 400px) {
+  :host .wrapper {
     flex-direction: row;
   }
-} */
+}
