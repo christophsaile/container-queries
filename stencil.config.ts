@@ -2,6 +2,7 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'container-queries',
+  hashFileNames: false,
   outputTargets: [
     {
       type: 'dist',
@@ -16,7 +17,7 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
-      baseUrl: 'https://ornate-begonia-6eac28.netlify.app/',
+      baseUrl: 'https://stenciljs.com',
     },
   ],
 };

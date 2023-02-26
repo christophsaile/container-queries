@@ -13,7 +13,6 @@ export class MyCard {
 
   componentDidLoad() {
     if (Build.isBrowser) {
-      console.log('ResizeObserver', ResizeObserver);
       this.resizeObserver = new ResizeObserver(([entry]) => {
         const { width } = entry.contentRect;
         if (width < 400) {
@@ -24,7 +23,6 @@ export class MyCard {
       });
       this.resizeObserver.observe(this.wrapper);
     }
-
   }
 
   disconnectedCallback() {
