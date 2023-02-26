@@ -6,7 +6,7 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class MyCard {
-  private wrapper: HTMLElement;
+  // private wrapper: HTMLElement;
 
   // private resizeObserver: ResizeObserver;
 
@@ -31,9 +31,9 @@ export class MyCard {
       <Host>
         <div
           class='wrapper'
-          ref={(el) => {
-            this.wrapper = el;
-          }}
+          // ref={(el) => {
+          //   this.wrapper = el;
+          // }}
         >
           <span></span>
           <div>
