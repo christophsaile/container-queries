@@ -2,8 +2,8 @@
   display: block;
   background-color: beige;
   color: black;
-  container-type: inline-size;
-  container-name: card;  
+  /* container-type: inline-size;
+  container-name: card;   */
 }
 
 :host .wrapper {
@@ -27,8 +27,8 @@
   }
 } */
 
-@container card (min-width: 400px) {
+/* @container card (min-width: 400px) {
   :host .wrapper {
     flex-direction: row;
   }
-}
+} */

@@ -16,7 +16,7 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
-      baseUrl: 'https://stenciljs.com',
+      baseUrl: 'https://ornate-begonia-6eac28.netlify.app/',
     },
   ],
 };
