@@ -2,7 +2,23 @@
   display: block;
 }
 
+:host h1 {
+  font-size: 46px;
+  margin-bottom: 100px;
+}
+
+:host h2 {
+  font-size: 32px;
+}
+
 :host section {
+  margin-bottom: 200px;
+}
+
+:host section.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 10px;
+  background-color: darkslategray;
 }
